@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E8D743;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    background-color: #f3f4ee;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px gray;
+}
+.container_1, .container_2{
+    margin: 2rem;
+    flex: 1;
+}
+.container_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.comp_options, .my_options{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+}
+.comp_options i{
+    border: 2px solid black;
+}
+.my_options button{
+    margin: 1rem;
+    font-size: xx-large;
+    background-color: #EBA91D;
+    border-radius: 15px;
+}
+#comp_option_1, #comp_option_2, #comp_option_3{
+    visibility: hidden;
+}
+.container_1 i{
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: #EBA91D;
+    border-radius: 15px;
+}
+.container_2{
+    display: flex;
+    flex-direction: column;
+}
+.container_2 p{
+    align-self: center;
+    padding: 1rem;
+}
+.container_2 p:first-of-type{
+    margin: -1rem auto 1rem auto;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.container_2 p:last-of-type{
+    margin-bottom: 4rem;
+}
+#reset_btn{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #898C6F;
+    font-weight: 900;
+    color: #f3f4ee;
+    border: 2px solid #898C6F;
+}
+#reset_btn:hover{
+    background-color: #6b6d57;
+    border: 2px solid #6b6d57;
+    transition: 1s;
+}
+
+/* Adding media query to make game responsive with small screens */
+
+@media screen and (max-width: 770px){
+    .container{
+        flex-direction: column;
+    }
+}

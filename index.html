@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b5d05a0511.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Rock_Paper_Scissor.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+        <div class="container">
+            <div class="container_1">
+                <div class="comp_options">
+                    <i class="fas fa-fist-raised" id="comp_option_1"></i>
+                    <i class="fas fa-hand-scissors" id="comp_option_2"></i>
+                    <i class="fas fa-hand-paper" id="comp_option_3"></i>
+                </div>
+                <div class="my_options">
+                    <button value="Rock"><i class="fas fa-fist-raised"></i></button>
+                    <button value="Scissor"><i class="fas fa-hand-scissors"></i></button>
+                    <button value="Paper"><i class="fas fa-hand-paper"></i></button>
+                </div>
+                
+            </div>
+            <div class="container_2">
+                <p>SCORE</p>
+                <p>ME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="player_score" placeholder="0" disabled></p>
+                <p>COMPUTER &nbsp; <input type="number" id="comp_score" placeholder="0" disabled></p>
+                <button id="reset_btn">RESET</button>
+            </div>
+        </div>
+
+        <!-- Linking JavaScript file -->
+    
+    <script src="Rock_Paper_Scissor.js"></script>
+
+</body>
+</html>
